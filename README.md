@@ -41,7 +41,7 @@ To add all aliases permanently, run:
 sudo chmod +x setup.sh
 source setup.sh
 ```
-This will append all aliases to your `~/.bashrc` file and reload the `~/.bashrc` which will make the aliases to take effect immediately. 
+This will append all aliases to your `~/.bashrc` file and reload the file hence, the aliases take effect immediately. 
 
 ---
 
@@ -931,7 +931,7 @@ Feel free to contribute by adding more aliases or improving existing ones. Fork 
 ---
 
 ## **Connect With Me!** 🤝
-If you encounter any challenges setting up this project, feel free to **reach out** and connect with me:
+If you encounter any challenges creating your **Aliases**, feel free to **reach out** and connect with me:
 
 - **LinkedIn**: [GODFREY IFEANYI](https://www.linkedin.com/in/godfrey-ifeanyi/)  
 - **X (Twitter)**: [IFEANYI GODFREY](https://twitter.com/@ifeanyi_godfrey)  
