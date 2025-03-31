@@ -9,19 +9,19 @@ This repository provides a collection of **permanent aliases** for various DevOp
 ```
 DevOps-Aliases/
 │── aliases/
-│   ├── [kubernetes-aliases.sh](aliases/kubernetes-aliases.sh)
-│   ├── [docker-aliases.sh](aliases/docker-aliases.sh)
-│   ├── [linux-aliases.sh](aliases/linux-aliases.sh)
-│   ├── [git-aliases.sh](aliases/git-aliases.sh)
-│   ├── [terraform-aliases.sh](aliases/terraform-aliases.sh)
-│   ├── [ansible-aliases.sh](aliases/ansible-aliases.sh)
-│   ├── [helm-aliases.sh](aliases/helm-aliases.sh)
-│   ├── [networking-aliases.sh](aliases/networking-aliases.sh)
-│   ├── [argo-rollouts-aliases.sh](aliases/argo-rollouts-aliases.sh)
-│   ├── [argocd-aliases.sh](aliases/argocd-aliases.sh)
-│   ├── [miscellaneous.sh](aliases/miscellaneous.sh)
-│── [README.md](README.md)
-│── [setup.sh](setup.sh)
+│   ├── kubernetes-aliases.sh
+│   ├── docker-aliases.sh
+│   ├── linux-aliases.sh
+│   ├── git-aliases.sh
+│   ├── terraform-aliases.sh
+│   ├── ansible-aliases.sh
+│   ├── helm-aliases.sh
+│   ├── networking-aliases.sh
+│   ├── argo-rollouts-aliases.sh
+│   ├── argocd-aliases.sh
+│   ├── miscellaneous.sh
+│── README.md
+│── setup.sh
 ```
 
 - **[aliases/](aliases)** → Contains shell scripts with aliases for different DevOps tools.
@@ -41,9 +41,12 @@ To add all aliases permanently, run:
 sudo chmod +x setup.sh
 source setup.sh
 ```
-This will append all aliases to your `~/.bashrc` file.
+This will append all aliases to your `~/.bashrc` file and reload the `~/.bashrc` which will make the aliases to take effect immediately. 
 
-- The **[setup.sh](setup.sh)** script is designed to automate the addition of all the **[DevOps tools aliases](aliases/)** in the directory to the shell environment. 
+---
+
+## The **[setup.sh](setup.sh)** Script
+The **`setup.sh`** script is designed to automate the addition of all the **[DevOps tools aliases](aliases/)** in the directory to the shell environment. 
 
 ### What the Script Does
 1. **Iterates through all alias scripts** located in the `aliases/` directory.
@@ -54,7 +57,7 @@ This will append all aliases to your `~/.bashrc` file.
    - If all aliases already exist, it notifies the user instead of giving a false success message.
 
 ### Expected Output
-If all aliases are newly added:
+- **If all aliases are newly added:**
 ```bash
 Setting up DevOps Aliases...
 Executing aliases/ansible-aliases.sh...
@@ -91,7 +94,7 @@ Terraform Aliases added successfully!
 All new aliases have been added successfully!
 ```
 
-If no new aliases were added because they already exist:
+- **If no new aliases were added because they already exist:**
 ```bash
 Setting up DevOps Aliases...
 Executing aliases/ansible-aliases.sh...
@@ -121,7 +124,7 @@ No new aliases were added. All aliases already exist in ~/.bashrc.
 
 ## Available Aliases
 ### **[Kubernetes Aliases](aliases/kubernetes-aliases.sh)**
-This section provides a list of Useful and essential **[Kubernetes Aliases]** for managing a Kubernetes cluster efficiently. If you don't want to add all **[Aliases](aliases)** in the directory to your shell environment but wants to add only the **Kubernetes Aliases**, run this one-liner to add them permanently to your `~/.bashrc` file:   
+This section provides a list of Useful and essential **Kubernetes Aliases** for managing a Kubernetes cluster efficiently. If you don't want to add all **[Aliases](aliases)** in the directory to your shell environment but wants to add only the **Kubernetes Aliases**, run this one-liner to add them permanently to your `~/.bashrc` file:   
 ```sh
 cat <<EOF >> ~/.bashrc
 
@@ -258,6 +261,8 @@ source ~/.bashrc
 - **`arabort`** → Abort a rollout
 - **`arrescue`** → Retry a rollout
 
+- **Feel free to customize these aliases to suit your workflow. 🚀**
+
 ---
 
 ### **[Docker and Container Aliases](aliases/docker-aliases.sh)**
@@ -351,6 +356,8 @@ source ~/.bashrc
 - `dclogs` → Follow logs from Docker Compose services
 - `dcexec` → Run a command inside a service container
 - `dcb` → Build or rebuild services
+
+- **Feel free to customize these aliases to suit your workflow. 🚀**
 
 ---
 
@@ -478,6 +485,8 @@ This section provides a list of useful Linux and system utility aliases to enhan
 - `v` – Open Vim text editor
 - `s` – Open Nano text editor with sudo permissions
 
+- **Feel free to customize these aliases to suit your workflow. 🚀**
+
 ---
 
 
@@ -585,6 +594,8 @@ source ~/.bashrc
 - **`gclean`** → `git clean -fd` (Remove untracked files and directories)
 - **`gch`** → `git cherry-pick` (Apply commit from another branch)
 - **`gwip`** → `git add . && git commit -m "WIP"` (Save work in progress)
+
+- **Feel free to customize these aliases to suit your workflow. 🚀**
 
 ---
 
@@ -917,6 +928,16 @@ alias s='sudo nano'
 ## Contributing
 Feel free to contribute by adding more aliases or improving existing ones. Fork the repository, make changes, and submit a pull request.
 
+---
+
+## **Connect With Me!** 🤝
+If you encounter any challenges setting up this project, feel free to **reach out** and connect with me:
+
+- **LinkedIn**: [GODFREY IFEANYI](https://www.linkedin.com/in/godfrey-ifeanyi/)  
+- **X (Twitter)**: [IFEANYI GODFREY](https://twitter.com/@ifeanyi_godfrey)  
+- **GitHub**: [GODFREY IFEANYI GitHub Profile](https://github.com/Godfrey22152)  
+
+---
 ## License
 MIT License
 
